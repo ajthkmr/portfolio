@@ -1,54 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ajithkumar K - Data Scientist</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajithkumar K - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #64ffda;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #e0e0e0;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #64ffda;
+        }
+
+        section {
+            padding: 50px;
+            max-width: 1000px;
+            margin: auto;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h2 {
+            border-bottom: 2px solid #64ffda;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .skills, .projects, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1 1 calc(33.333% - 40px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            position: relative;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <h1>Ajithkumar K</h1>
-      <p>Data Scientist | Machine Learning Enthusiast</p>
-    </div>
-  </header>
+    <header>
+        <h1>Ajithkumar K</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <nav class="nav">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Enthusiastic Data Scientist with expertise in machine learning, natural language processing, and generative AI technologies. Skilled in Python and frameworks like Scikit-learn and TensorFlow.</p>
+    </section>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Fresher passionate in changing data into stories.</p>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-list">
-        <div class="project">
-          <h3>Project 1</h3>
-          <p>Description of your project and what it accomplished.</p>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="card">Programming Languages: Python, MySQL</div>
+            <div class="card">Data Analysis: Pandas, NumPy, Matplotlib, Seaborn</div>
+            <div class="card">Visualization: Power BI, Excel</div>
+            <div class="card">Machine Learning: Scikit-learn, TensorFlow</div>
+            <div class="card">Deep Learning: Transformers, Streamlit</div>
+            <div class="card">Computer Vision: OpenCV</div>
         </div>
-        <div class="project">
-          <h3>Project 2</h3>
-          <p>Description of another project and the impact it had.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Telecom Customer Churn Prediction</h3>
+                <p>Built a model to identify customers likely to churn. Trained classification models achieving an F1-score of 0.78.</p>
+            </div>
+            <div class="card">
+                <h3>Sentiment Analysis of YouTube Comments</h3>
+                <p>Developed an NLP pipeline achieving 85% accuracy in sentiment classification.</p>
+            </div>
+            <div class="card">
+                <h3>Neural Networks from Scratch</h3>
+                <p>Implemented forward/backward propagation algorithms, achieving 92% accuracy on MNIST dataset.</p>
+            </div>
+            <div class="card">
+                <h3>Image to Sketch Conversion</h3>
+                <p>Designed a Streamlit app using OpenCV for image processing.</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Feel free to reach out via <a href="mailto:ajithkumark.04@outlook.com">email</a>.</p>
-    </div>
-  </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:ajithkumark.04@outlook.com">ajithkumark.04@outlook.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ajthkmrk" target="_blank">Ajithkumar K</a></p>
+        <p>Phone: +91 8606648726</p>
+    </section>
 
+    <footer>
+        <p>&copy; 2025 Ajithkumar K. All rights reserved.</p>
+    </footer>
+</body>
+</html>
